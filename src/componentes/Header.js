@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Nav from '../componentes/Nav';
+import Logo from './Logo';
+import '../styles/header.css'
 
 function Header() {
   return (
-    <header>Header</header>
+   <header className='header'>
+    <Logo/>
+    <Nav/>
+   </header>
   )
 }
 

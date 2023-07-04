@@ -1,9 +1,9 @@
 import React from 'react'
-import Logotipo from '../assets/images/Logo.svg'
+import imagenLogo from '../assets/images/Logo.svg'
 
 function Logo() {
   return (
-    <img src={Logotipo} alt="Imagen de Logotipo"/>
+    <img src={imagenLogo} alt="Imagen de Logotipo"/>
   )
 }
 
