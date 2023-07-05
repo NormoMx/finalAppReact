@@ -1,14 +1,15 @@
 .header {
  display: flex;
  justify-content: space-around;
+ padding: 5px 0 5px 0;
+ margin-left: 10%;
+ margin-right: 10%;
 }
 
 .links {
  display: flex;
  justify-content: space-evenly;
  align-items: center;
- padding-left: 40px;
- padding-right: 40px;
 }
 
 li {
@@ -26,8 +27,7 @@ body {
  display: flex;
  flex-direction: column;
  justify-content: center;
- padding-left: 5%;
- padding-right: 5%;
  background-color: #EDEFEE;
+ width: 100vw;
 }
 
