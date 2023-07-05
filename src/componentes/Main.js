@@ -4,8 +4,13 @@ import '../styles/main.css'
 import greek from '../assets/images/greek salad.jpg'
 import bruchetta from '../assets/images/bruchetta.svg'
 import lemon from '../assets/images/lemon dessert.jpg'
+import { useNavigate } from 'react-router-dom';
 
 function Hero() {
+ const history = useNavigate();
+ const linkPage = () => {
+  history('/reservations');
+ };
   return (
    <section className="hero">
      <div className='heroup'></div>
@@ -13,7 +18,7 @@ function Hero() {
       <h1>Little Lemon</h1>
       <h3>Chicago</h3>
       <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-      <input type="button" value="Reserve a Table"/>
+      <input type="button" value="Reserve a Table" onClick={linkPage} />
      </div>
      <div className='herobottom'></div>
      <img className='heroimage' src={heroImage} width="280px" alt="imagen de comida del restaurante"/>
@@ -22,6 +27,10 @@ function Hero() {
 }
 
 function Specials() {
+ const history = useNavigate();
+ const linkMenu = () => {
+  history('/menu');
+ };
  const dataCard= [{
   class: 'greek',
   name: 'Greek Salad',
@@ -44,7 +53,7 @@ function Specials() {
  return (
   <section className="specials">
    <h1>This week specials!</h1>
-   <input type="button" value="Online Menu" />
+   <input type="button" value="Online Menu" onClick={linkMenu} />
    <Card imagen={greek} info={dataCard[0]}/>
    <Card imagen={bruchetta} info={dataCard[1]}/>
    <Card imagen={lemon} info={dataCard[2]}/>

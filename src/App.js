@@ -4,11 +4,12 @@ import Footer from './componentes/Footer'
 
 function App() {
   return (
-  <>
-   <Header/>
-   <Main/>
-   <Footer/>
-  </>
+   <>
+     <Header/>
+     <Main/>
+     <Footer/>
+   </>
+
   );
 }
 
